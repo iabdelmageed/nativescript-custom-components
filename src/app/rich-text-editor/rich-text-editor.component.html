@@ -1,0 +1,55 @@
+<StackLayout orientation="vertical">
+
+      <WrapLayout borderRadius="5% 5% 0 0" orientation="horizontal" class="editortoolbar">
+              <Label #action_undo fontSize="20" padding="10" margin="3"  text="&#xe166;" class="mdi"  (tap)="onUndo($event)"> </Label>
+
+              <Label #action_redo fontSize="20" padding="10" margin="3"  text="&#xe15a;" class="mdi" (tap)="onRedo($event)"> </Label>
+              <Label #action_bold fontSize="20" padding="10" margin="3"  text="&#xe238;" class="mdi" (tap)="onBold($event)"> </Label>
+              <Label #action_italic fontSize="20" padding="10" margin="3"  text="&#xe23f;" class="mdi" (tap)="onItalic($event)"> </Label>
+              <!-- <Image #action_subscript width="20" height="20" margin="3"  src="~/images/rich-editor/subscript.png" (tap)="onSubscript($event, action_superscript)"> </Image> -->
+              <!-- <Image #action_superscript width="20" height="20" margin="3"  src="~/images/rich-editor/superscript.png" (tap)="onSuperscript($event, action_subscript)"> </Image> -->
+              <Label #action_strikethrough fontSize="20" padding="10" margin="3"  text="&#xe257;" class="mdi" (tap)="onStrikethrough($event)"> </Label>
+  
+              <Label #action_underline fontSize="20" padding="10" margin="3"  text="&#xe249;" class="mdi" (tap)="onUnderline($event)"> </Label>
+  
+              <!-- <Image #action_heading1 width="20" height="20" margin="3"  src="~/images/rich-editor/h1.png" (tap)="onHeading1($event, action_heading2, action_heading3, action_heading4, action_heading5, action_heading6)"> </Image>
+              <Image #action_heading2 width="20" height="20" margin="3"  src="~/images/rich-editor/h2.png" (tap)="onHeading2($event, action_heading1, action_heading3, action_heading4, action_heading5, action_heading6)"> </Image>
+              <Image #action_heading3 width="20" height="20" margin="3"  src="~/images/rich-editor/h3.png" (tap)="onHeading3($event, action_heading2, action_heading1, action_heading4, action_heading5, action_heading6)"> </Image>
+              <Image #action_heading4 width="20" height="20" margin="3"  src="~/images/rich-editor/h4.png" (tap)="onHeading4($event, action_heading2, action_heading1, action_heading3, action_heading5, action_heading6)"> </Image>
+              <Image #action_heading5 width="20" height="20" margin="3"  src="~/images/rich-editor/h5.png" (tap)="onHeading5($event, action_heading2, action_heading1, action_heading3, action_heading4, action_heading6)"> </Image>
+              <Image #action_heading6 width="20" height="20" margin="3"  src="~/images/rich-editor/h6.png" (tap)="onHeading6($event, action_heading2, action_heading3, action_heading4, action_heading5, action_heading1)"> </Image> -->
+  
+              <Label #action_txt_color fontSize="20" padding="10" margin="3"  text="&#xe165;" class="mdi" (tap)="onTxtColor($event)"> </Label>
+  
+              <Label #action_bg_color fontSize="20" padding="10" margin="3"  text="&#xe23a;" class="mdi" (tap)="onBgColor($event)"> </Label>
+  
+              <Label #action_indent fontSize="20" padding="10" margin="3"  text="&#xe23e;" class="mdi" (tap)="onIndent($event, action_outdent)"> </Label>
+  
+  
+              <Label #action_outdent fontSize="20" padding="10" margin="3"  text="&#xe23d;" class="mdi" (tap)="onOutdent($event, action_indent)"> </Label>
+  
+              <Label #action_align_left fontSize="20" padding="10" margin="3"  text="&#xe236;" class="mdi"  (tap)="onAlignLeft($event, action_align_center, action_align_right)"> </Label>
+  
+              <Label #action_align_center fontSize="20" padding="10" margin="3"  text="&#xe235;" class="mdi" (tap)="onAlignCenter($event, action_align_left, action_align_right)"> </Label>
+  
+              <Label #action_align_right fontSize="20" padding="10" margin="3"  text="&#xe237;" class="mdi" (tap)="onAlignRight($event, action_align_left, action_align_center)"> </Label>
+  
+              <Label #action_insert_bullets fontSize="20" padding="10" margin="3"  text="&#xe241;" class="mdi" (tap)="onInsertBullets($event, action_insert_numbers)"> </Label>
+  
+  
+              <Label #action_insert_numbers fontSize="20" padding="10" margin="3"  text="&#xe242;" class="mdi" (tap)="onInsertNumbers($event, action_insert_bullets)"> </Label>
+  
+  
+              <Label *ngIf="false" #action_blockquote fontSize="20" padding="10" margin="3"  text="&#xe244;" class="mdi" (tap)="onBlockquote($event)"> </Label>
+              <!-- <Image *ngIf="false" #action_insert_image width="20" height="20" margin="3"  src="~/images/rich-editor/insert_image.png" (tap)="onInsertImage($event)"> </Image> -->
+              <!-- <Image *ngIf="false" #action_insert_audio width="20" height="20" margin="3"  src="~/images/rich-editor/music.png" (tap)="onInsertImage($event)"> </Image> -->
+              <!-- <Image *ngIf="false" #action_insert_video width="20" height="20" margin="3"  src="~/images/rich-editor/video.png" (tap)="onInsertVideo($event)"> </Image> -->
+  
+              <!-- <Image *ngIf="false" #action_insert_youtube width="20" height="20" margin="3"  src="~/images/rich-editor/youtube.png" (tap)="onInsertYoutube($event)"> </Image> -->
+              <Label #action_insert_link fontSize="20" padding="10" margin="3"  text="&#xe157;" class="mdi"  (tap)="insertLink($event)"> </Label>
+              <!-- <Image *ngIf="false" #action_insert_checkbox width="20" height="20" margin="3"  src="~/images/rich-editor/checkbox_on_background.png" (tap)="onInsertCheckBox($event)"> </Image> -->
+      </WrapLayout>
+  
+      <WebView  #webView></WebView>
+  
+  </StackLayout>

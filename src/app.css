@@ -1,0 +1,18 @@
+@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+Button.-primary {
+  font-size: 18;
+}
+
+.mdi {
+  font-family: "MaterialIcons-Regular";
+}
+
+.ns-light .editortoolbar {
+  background-color: #F8F8FF;
+}
+
+.ns-dark .editortoolbar {
+  background-color: #343434;
+}
