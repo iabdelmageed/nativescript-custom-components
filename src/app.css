@@ -9,10 +9,22 @@ Button.-primary {
   font-family: "MaterialIcons-Regular";
 }
 
+.icon {
+  font-family: 'LineAwesome';
+}
+
 .ns-light .editortoolbar {
   background-color: #F8F8FF;
 }
 
 .ns-dark .editortoolbar {
+  background-color: #343434;
+}
+
+.ns-light .defaultbg {
+  background-color: white;
+}
+
+.ns-dark .defaultbg {
   background-color: #343434;
 }

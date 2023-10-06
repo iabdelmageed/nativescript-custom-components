@@ -1,0 +1,6 @@
+<ActionBar title="My App"> </ActionBar>
+
+<GridLayout rows="auto, *" columns="*">
+  <Dropdown row="0" [items]="students" [itemTemplate]="itemTemplate" rowHeight="100" (onItemSelect)="onSelect($event)"></Dropdown>
+  <ns-rich-text-editor row="1" marginTop="100"></ns-rich-text-editor>
+</GridLayout>

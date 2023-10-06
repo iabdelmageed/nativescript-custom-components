@@ -1,0 +1,4 @@
+<GridLayout id="selectedItemView" #selectedItemView rows="auto" columns="*" margin="1">
+    <TextField col="0" #dropDownText [isEnabled]="textEnabled"  verticalAlignment="center"  style="min-width: 60;" [fontWeight]="!textEnabled ? 'bold': ''" class="dropdownText" (textChange)="filterSelections($event)" returnKeyType="done" (returnPress)="onReturnPress($event)"></TextField>
+    <Label col="0" #dropDownIcon text="&#xf165;" fontSize="25" horizontalAlignment="right" verticalAlignment="center" (tap)="onTap($event)" marginRight="20" class="icon dropdownIcon"></Label>
+</GridLayout>

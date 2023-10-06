@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core'
 import { Routes } from '@angular/router'
 import { NativeScriptRouterModule } from '@nativescript/angular'
-import { EditorDemoComponent } from './editor/editor-demo.component'
+import { DemoComponent } from './editor/demo.component'
 
 
 const routes: Routes = [
   { path: '', redirectTo: '/demo', pathMatch: 'full' },
-  { path: 'demo', component: EditorDemoComponent },
+  { path: 'demo', component: DemoComponent },
 
 ]
 
