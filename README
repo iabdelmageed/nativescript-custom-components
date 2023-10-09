@@ -1,8 +1,14 @@
+## Nativescript Text Rich Editor
+
 1- plugin: nativescript-webview-interface
 2- assets folder
 3- fonts folder
 4- add font to app.css
 5- run ios|android
+
+
+## Nativescript dropdown 
+ using RootLayout
 
 
 I hope I helped someone. This code can be improved but this is a good start for anyone looking for the same rich text editor with long hours and no result!
